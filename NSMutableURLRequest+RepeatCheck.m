@@ -17,8 +17,7 @@
 @implementation NSMutableURLRequest (RepeatCheck)
 
 + (void)load{
-#ifdef Release
-#else
+#ifdef DEBUG
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         method_exchangeImplementations(class_getInstanceMethod([self class], @selector(setHTTPBody:)),
