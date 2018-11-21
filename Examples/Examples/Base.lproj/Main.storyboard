@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OI-51-jQy">
+                                <rect key="frame" x="15" y="259" width="345" height="200"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Kh-aH-0h6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="发送一个GET请求"/>
+                                <connections>
+                                    <action selector="getRequest" destination="BYZ-38-t0r" eventType="touchUpInside" id="7nZ-CF-DsD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWI-EN-57f">
+                                <rect key="frame" x="14" y="467" width="345" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.33725490200000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="U4t-y4-5hr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="发送一个POST请求"/>
+                                <connections>
+                                    <action selector="postRequest" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogb-Hz-EvF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eWI-EN-57f" firstAttribute="leading" secondItem="I8h-Tk-mQ3" secondAttribute="leading" constant="14" id="9kV-x6-NtE"/>
+                            <constraint firstItem="I8h-Tk-mQ3" firstAttribute="bottom" secondItem="eWI-EN-57f" secondAttribute="bottom" id="Po1-cT-wUU"/>
+                            <constraint firstItem="4OI-51-jQy" firstAttribute="leading" secondItem="I8h-Tk-mQ3" secondAttribute="leading" constant="15" id="eXj-ek-JaH"/>
+                            <constraint firstItem="I8h-Tk-mQ3" firstAttribute="trailing" secondItem="eWI-EN-57f" secondAttribute="trailing" constant="16" id="lFf-Mf-svl"/>
+                            <constraint firstItem="I8h-Tk-mQ3" firstAttribute="trailing" secondItem="4OI-51-jQy" secondAttribute="trailing" constant="15" id="p1K-JI-vGq"/>
+                            <constraint firstItem="eWI-EN-57f" firstAttribute="top" secondItem="4OI-51-jQy" secondAttribute="bottom" constant="8" id="r08-1g-3eG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I8h-Tk-mQ3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
